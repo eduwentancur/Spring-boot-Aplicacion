@@ -17,21 +17,25 @@ import javax.persistence.Transient;
 @Entity
 public class User implements Serializable {
     
-    private static final long serialVersionUID = -6833167247955613395L;
-
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
+   
     @Column 
     private String firstName;
+   
     @Column
     private String lastName;
+   
     @Column
     private String email;
+   
     @Column
     private String username;
+   
     @Column
     private String password;
+   
     @Transient
     private String confirmPassword;
 

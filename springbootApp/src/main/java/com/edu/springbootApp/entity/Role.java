@@ -17,8 +17,10 @@ public class Role implements Serializable{
     @GeneratedValue(strategy=GenerationType.AUTO, generator="native")
 	@GenericGenerator(name="native",strategy="native")
     private Long id;
+
     @Column
     private String name;
+    
     @Column
     private String description;
    

@@ -12,8 +12,6 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 public class Role implements Serializable{
-    
-    private static final long serialVersionUID = -6833167247955613395L;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO, generator="native")

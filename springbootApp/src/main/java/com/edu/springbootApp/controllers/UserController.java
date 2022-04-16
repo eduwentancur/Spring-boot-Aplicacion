@@ -3,7 +3,6 @@ package com.edu.springbootApp.controllers;
 import com.edu.springbootApp.entity.User;
 import com.edu.springbootApp.repository.RoleRepository;
 import com.edu.springbootApp.services.UserService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +16,6 @@ public class UserController {
 
     @Autowired
     UserService userService;
-
     
     @GetMapping("/userForm")
 	public String getUserForm(Model model) {
